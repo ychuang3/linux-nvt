@@ -35,6 +35,14 @@ config ARM_MHU_V2
 	  Say Y here if you want to build the ARM MHUv2 controller driver,
 	  which provides unidirectional mailboxes between processing elements.
 
+config MA35D1_WORMHOLE
+	tristate "MA35D1 Wormhole"
+	depends on ARCH_MA35D1
+	help
+	  Say yes here to add support for the MA35D1 wormhole driver.
+	  The wormholw is used to send message between application processors
+	  and MCU.
+
 config IMX_MBOX
 	tristate "i.MX Mailbox"
 	depends on ARCH_MXC || COMPILE_TEST

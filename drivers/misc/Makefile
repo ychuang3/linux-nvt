@@ -62,3 +62,8 @@ obj-$(CONFIG_HI6421V600_IRQ)	+= hi6421v600-irq.o
 obj-$(CONFIG_OPEN_DICE)		+= open-dice.o
 obj-$(CONFIG_GP_PCI1XXXX)	+= mchp_pci1xxxx/
 obj-$(CONFIG_VCPU_STALL_DETECTOR)	+= vcpu_stall_detector.o
+obj-$(CONFIG_MA35D1_KS)		+= ma35d1-ks.o
+obj-$(CONFIG_MA35D1_TIMER)	+= ma35d1-timer.o
+obj-$(CONFIG_MA35D1_EBI)	+= ma35d1-ebi.o
+obj-$(CONFIG_MA35D1_MISCTRL)	+= ma35d1-misctrl.o
+
