@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+comment "MA35D1 media platform drivers"
+
+config VIDEO_MA35D1
+	tristate "MA35D1 Capture Interface driver"
+	depends on V4L_PLATFORM_DRIVERS
+	depends on VIDEO_DEV && OF
+	depends on ARCH_MA35D1
+	select VIDEOBUF2_DMA_CONTIG
+	select MEDIA_CONTROLLER
+	select V4L2_FWNODE
+	help
+	  This is a v4l2 driver for the MA35D1 Capture Interface

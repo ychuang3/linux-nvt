@@ -298,6 +298,14 @@ config RCAR_REMOTEPROC
 	  This can be either built-in or a loadable module.
 	  If compiled as module (M), the module name is rcar_rproc.
 
+config MA35D1_RPROC
+	tristate "MA35D1 remoteproc support"
+	depends on ARCH_MA35D1
+	select MAILBOX
+	select MA35D1_WORMHOLE
+	help
+	  Say y here to support MA35D1's remote processors
+
 config ST_REMOTEPROC
 	tristate "ST remoteproc support"
 	depends on ARCH_STI
